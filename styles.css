@@ -1,0 +1,97 @@
+/* Lavender Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
+    transition: background 0.3s ease;
+}
+
+
+.calculator {
+    width: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+ Theme Toggle 
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+} 
+
+/* Display */
+#display {
+    width: 300px;
+    height: 100px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #4B0082;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+/* Button Colors */
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.red {
+    background: #8A2BE2;
+    color: white;
+}
+
+.green {
+    background: #6A5ACD;
+    color: white;
+}
+
+button:nth-child(n+5) {
+    background: rgba(255, 255, 255, 0.3);
+    color: #4B0082;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+
+
